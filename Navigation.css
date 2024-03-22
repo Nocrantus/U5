@@ -1,0 +1,89 @@
+.third-level /*positions the third layer relative to the second*/
+{
+    position: relative;
+    top: -30px;
+    right: -80px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.menuPos{
+	position:absolute;
+
+	
+}
+
+.third-level > li /*third layer formatting*/
+{
+    height: 30px;
+    background: #999999;
+}
+.third-level > li:hover /*upon hovering over the third layer elements*/
+{
+	background: #CCCCCC; 
+}
+
+.second-level /*position the second layer relative to the first*/
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 80px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.second-level > li /*second layer formatting*/
+{
+    position: relative;
+    height: 30px;
+    background: #999999;
+}
+.second-level > li:hover /*upon hovering over the second layer elements*/
+{
+	background: #CCCCCC; 
+}
+
+.top-level
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-level > li
+{
+    position: relative;
+    float: left;
+    height: 30px;
+    width: 80px;
+    background: #333;
+}
+.top-level > li:hover 
+{ 
+	background: red; 
+}
+
+.top-level li:hover > ul /*On hover, display the next level's menu*/
+{
+    display: inline;
+}
+
+.top-level a /*Apply to all links inside the menu*/
+{
+	text-align:center;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    /*Make the link cover the entire block*/
+    display: block;
+    line-height: 30px;
+}
+.top-level a:hover 
+{
+	color: #000000; 
+}
