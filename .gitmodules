@@ -1,0 +1,6 @@
+[submodule "U4"]
+	path = U4
+	url = https://github.com/Nocrantus/U4
+[submodule "U3"]
+	path = U3
+	url = https://github.com/Nocrantus/U3

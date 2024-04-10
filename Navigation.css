@@ -2,17 +2,36 @@
 {
     position: relative;
     top: -30px;
-    right: -80px;
+    left: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+.fourth-level /*positions the fourth layer relative to the third*/
+{
+    position: relative;
+    top: -30px;
+    left: 150px;
     list-style: none;
     padding: 0;
     margin: 0;
     display: none;
 }
 
+.fourth-level > li /*fourth layer formatting*/
+{
+    height: 30px;
+    background: #999999;
+}
+
+.third-level > li:hover /*upon hovering over the fourth layer elements*/
+{
+	background: #CCCCCC; 
+}
+
 .menuPos{
 	position:absolute;
-
-	
 }
 
 .third-level > li /*third layer formatting*/
@@ -30,7 +49,7 @@
     position: absolute;
     top: 30px;
     left: 0;
-    width: 80px;
+    width: 150px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -60,7 +79,7 @@
     position: relative;
     float: left;
     height: 30px;
-    width: 80px;
+    width: 150px;
     background: #333;
 }
 .top-level > li:hover 
